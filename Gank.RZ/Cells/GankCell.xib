@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="1063" id="k9I-fU-SK8" customClass="GankCell" customModule="Gank_RZ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k9I-fU-SK8" id="aaY-W4-nZm">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uNZ-GY-9zu">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yO-kD-UVg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <color key="barTintColor" red="0.098039215690000001" green="0.46274509800000002" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="每日精选" id="ypD-mD-i8W"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039215690000001" green="0.46274509800000002" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="64" id="BTe-z4-tME"/>
+                            <constraint firstItem="1yO-kD-UVg" firstAttribute="leading" secondItem="uNZ-GY-9zu" secondAttribute="leading" id="QNZ-FJ-pM1"/>
+                            <constraint firstAttribute="bottom" secondItem="1yO-kD-UVg" secondAttribute="bottom" id="RWU-im-a9h"/>
+                            <constraint firstAttribute="trailing" secondItem="1yO-kD-UVg" secondAttribute="trailing" id="WIh-bz-bNY"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="1yO-kD-UVg"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="BTe-z4-tME"/>
+                                <exclude reference="QNZ-FJ-pM1"/>
+                                <exclude reference="RWU-im-a9h"/>
+                                <exclude reference="WIh-bz-bNY"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="1yO-kD-UVg"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="BTe-z4-tME"/>
+                                <include reference="QNZ-FJ-pM1"/>
+                                <include reference="RWU-im-a9h"/>
+                                <include reference="WIh-bz-bNY"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Nei-BH-4ug">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </tableView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="uNZ-GY-9zu" secondAttribute="trailing" id="1Fa-rN-v1z"/>
+                    <constraint firstItem="uNZ-GY-9zu" firstAttribute="leading" secondItem="aaY-W4-nZm" secondAttribute="leading" id="9vO-Ns-USh"/>
+                    <constraint firstAttribute="trailing" secondItem="Nei-BH-4ug" secondAttribute="trailing" id="H47-gh-Lpj"/>
+                    <constraint firstAttribute="bottom" secondItem="Nei-BH-4ug" secondAttribute="bottom" id="M6g-2L-Ikb"/>
+                    <constraint firstItem="Nei-BH-4ug" firstAttribute="leading" secondItem="aaY-W4-nZm" secondAttribute="leading" id="TAu-mn-Q0c"/>
+                    <constraint firstItem="uNZ-GY-9zu" firstAttribute="top" secondItem="aaY-W4-nZm" secondAttribute="top" id="dGb-cl-blh"/>
+                    <constraint firstItem="Nei-BH-4ug" firstAttribute="top" secondItem="uNZ-GY-9zu" secondAttribute="bottom" constant="8" id="gqt-9C-DRR"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="uNZ-GY-9zu"/>
+                        <exclude reference="Nei-BH-4ug"/>
+                    </mask>
+                    <mask key="constraints">
+                        <exclude reference="H47-gh-Lpj"/>
+                        <exclude reference="M6g-2L-Ikb"/>
+                        <exclude reference="TAu-mn-Q0c"/>
+                        <exclude reference="gqt-9C-DRR"/>
+                        <exclude reference="1Fa-rN-v1z"/>
+                        <exclude reference="9vO-Ns-USh"/>
+                        <exclude reference="dGb-cl-blh"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=compact">
+                    <mask key="subviews">
+                        <include reference="uNZ-GY-9zu"/>
+                        <include reference="Nei-BH-4ug"/>
+                    </mask>
+                    <mask key="constraints">
+                        <include reference="H47-gh-Lpj"/>
+                        <include reference="M6g-2L-Ikb"/>
+                        <include reference="TAu-mn-Q0c"/>
+                        <include reference="gqt-9C-DRR"/>
+                        <include reference="1Fa-rN-v1z"/>
+                        <include reference="9vO-Ns-USh"/>
+                        <include reference="dGb-cl-blh"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellTableView" destination="Nei-BH-4ug" id="2se-Xw-Big"/>
+                <outlet property="item" destination="ypD-mD-i8W" id="Ynl-o6-E6k"/>
+            </connections>
+            <point key="canvasLocation" x="292.5" y="375.5"/>
+        </tableViewCell>
+    </objects>
+</document>

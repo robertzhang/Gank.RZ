@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderOrFooterView" customModule="Gank_RZ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="ENR-0m-Rsq">
+                    <rect key="frame" x="115" y="83" width="20" height="20"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加载更多内容..." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUO-yR-6R9">
+                    <rect key="frame" x="60" y="113.5" width="130" height="23"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hUO-yR-6R9" firstAttribute="top" secondItem="ENR-0m-Rsq" secondAttribute="bottom" constant="15" id="AeA-cW-df8"/>
+                <constraint firstItem="ENR-0m-Rsq" firstAttribute="centerX" secondItem="hUO-yR-6R9" secondAttribute="centerX" id="U2i-dC-l8Z"/>
+                <constraint firstItem="hUO-yR-6R9" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ftA-WK-pQz"/>
+                <constraint firstItem="hUO-yR-6R9" firstAttribute="top" secondItem="ENR-0m-Rsq" secondAttribute="bottom" constant="10" id="vc6-xz-kn3"/>
+                <constraint firstItem="hUO-yR-6R9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wcY-kb-QUb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="AeA-cW-df8"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="indicator" destination="ENR-0m-Rsq" id="Wff-Ah-1yG"/>
+                <outlet property="note" destination="hUO-yR-6R9" id="nUp-PS-Kdf"/>
+            </connections>
+            <point key="canvasLocation" x="125" y="-1082"/>
+        </view>
+    </objects>
+</document>
