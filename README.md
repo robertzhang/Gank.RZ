@@ -5,9 +5,11 @@
 > 开发环境 xcode 7.3
 
 ## 截图
-![image](https://github.com/robertzhang/Gank.RZ/blob/master/screenshots/01.png)
-
+![image](https://github.com/robertzhang/Gank.RZ/blob/master/screenshots/01.jpeg)
 ![image](https://github.com/robertzhang/Gank.RZ/blob/master/screenshots/02.png)
+![image](https://github.com/robertzhang/Gank.RZ/blob/master/screenshots/03.jpeg)
+![image](https://github.com/robertzhang/Gank.RZ/blob/master/screenshots/04.jpeg)
+![image](https://github.com/robertzhang/Gank.RZ/blob/master/screenshots/05.jpeg)
 ## 功能说明
 ### 使用开源库
 swift source：
