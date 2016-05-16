@@ -12,6 +12,15 @@
 ![分类界面](https://github.com/robertzhang/Gank.RZ/blob/master/screenshots/05.jpeg)
 ![福利界面](https://github.com/robertzhang/Gank.RZ/blob/master/screenshots/06.jpeg)
 ![福利详情页](https://github.com/robertzhang/Gank.RZ/blob/master/screenshots/07.jpeg)
+
+## Usage
+克隆工程：
+> git clone https://github.com/robertzhang/Gank.RZ
+
+添加第三方资源：
+> gem install cocoapods
+> pod install
+ 
 ## 功能说明
 ### 使用开源库
 swift source：
