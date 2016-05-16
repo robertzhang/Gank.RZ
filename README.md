@@ -18,7 +18,7 @@
 > git clone https://github.com/robertzhang/Gank.RZ
 
 添加第三方资源：
-> gem install cocoapods
+> gem install cocoapods  
 > pod install
  
 ## 功能说明
